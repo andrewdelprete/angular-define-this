@@ -81,6 +81,14 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        uglify: {
+            build: {
+                files: {
+                    'build/angular-defineThis.min.js': 'app/assets/scripts/angular-defineThis.js'
+                },
+                mangle: false
+            }
+        },
         'gh-pages': {
             options: {
                 base: 'app'
@@ -99,6 +107,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['jshint' ,'karma']);
 
-    grunt.registerTask('build', ['copy:build', 'gh-pages']);
+    grunt.registerTask('build', ['copy:build', 'uglify:build', 'gh-pages']);
 //    grunt.registerTask('build', ['copy:build']);
 };
