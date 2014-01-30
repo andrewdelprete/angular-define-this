@@ -1,0 +1,95 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'source_sans_prolight';
+            src: url('assets/fonts/sourcesanspro/sourcesanspro-light-webfont.eot');
+            src: url('assets/fonts/sourcesanspro/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+            url('assets/fonts/sourcesanspro/sourcesanspro-light-webfont.woff') format('woff'),
+            url('assets/fonts/sourcesanspro/sourcesanspro-light-webfont.ttf') format('truetype'),
+            url('assets/fonts/sourcesanspro/sourcesanspro-light-webfont.svg#source_sans_proregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'source_sans_prolight';
+        }
+
+        html h1 {
+            font-size: 72px;
+            line-height: 85px;
+        }
+
+        h1 span {
+            line-height: 50px;
+        }
+
+        h1, h3, h4 {
+            font-family: source_sans_prolight;
+            text-align: center;
+            line-height: normal;
+        }
+
+        input[type='text'] {
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 960px;
+            }
+        }
+
+        .navbar {
+            margin-bottom: 50px;
+        }
+
+    </style>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body ng-app="defineThisDemoApp">
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">Angular Define This</a>
+          </div>
+      </div>
+  </nav>
+  <!-- Add your site or application content here -->
+    <div class="container" ng-controller="dtCtrl">
+        <div class="row">
+            <div class="col-md-4" style="margin: auto; float: none">
+                <form ng-submit="submit()">
+                    <div class="input-group">
+                        <input type="text" ng-model="word" class="form-control" placeholder="Type in a word">
+                        <span class="input-group-btn">
+                            <input type="submit" class="btn btn-default" value='Define!' ng-disabled="!word" />
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h1><span id="word"></span></h1>
+        <h4 class="text-muted" ng-show="submitted">Hover over the word for a tooltip :-)</h4>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/defineThis.js"></script>
+  </body>
+</html>
