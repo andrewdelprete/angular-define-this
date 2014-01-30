@@ -1,6 +1,6 @@
 {
-  "name": "angularjs",
-  "version": "0.0.0",
+  "name": "Define This",
+  "version": "1.0.0",
   "dependencies": {
     "angular": "1.2.6",
     "json3": "~3.2.6",

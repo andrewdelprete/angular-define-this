@@ -1,6 +1,6 @@
 {
-  "name": "angular-dictionary",
-  "version": "0.0.0",
+  "name": "Define This",
+  "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-concat": "~0.3.0",
