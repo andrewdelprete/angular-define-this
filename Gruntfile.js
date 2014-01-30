@@ -71,11 +71,12 @@ module.exports = function(grunt) {
             build: {
                 files: [{
                     expand: true,
+                    flatten: true,
                     dot: true,
                     cwd: 'app',
-                    dest: 'app/dist',
+                    dest: 'build',
                     src: [
-                        'defineThis.js'
+                        '**/assets/scripts/angular-defineThis.js'
                     ]
                 }]
             }
@@ -98,5 +99,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['jshint' ,'karma']);
 
-    grunt.registerTask('build', ['jshint' ,'karma', 'copy:build', 'gh-pages']);
+    grunt.registerTask('build', ['copy:build', 'gh-pages']);
+//    grunt.registerTask('build', ['copy:build']);
 };
