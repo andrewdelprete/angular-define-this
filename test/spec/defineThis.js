@@ -1,7 +1,7 @@
 'use strict';
 
 describe('DefineThis', function() {
-    var scope, httpBackend, DefineThis, url, url2, element, definition;
+    var scope, httpBackend, DefineThis, url, element, definition;
 
     beforeEach(module('defineThisModule', 'mockedFeed'));
 
