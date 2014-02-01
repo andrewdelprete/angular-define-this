@@ -1,7 +1,7 @@
 angular-defineThis
 =========
 
-A very mimimal Angular module that allows you to utilize a hoverable tooltip definitioon of a word by wrapping it in a custom directive.
+A very minimal Angular module that allows you wrap a word in a simple directive to get a definition of the word via tooltip.
 
 Created By
 ----
