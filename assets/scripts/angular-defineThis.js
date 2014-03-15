@@ -20,7 +20,7 @@ angular.module('defineThisModule', ['ui.bootstrap'])
                     return 'Could not find definition';
                 }
             }, function() {
-                return 'Could not connection to dictionary, please try again later.';
+                return 'Unable to connect to dictionary, please try again later.';
             });
         };
 
