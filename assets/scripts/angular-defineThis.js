@@ -6,6 +6,7 @@ angular.module('defineThisModule', ['ui.bootstrap'])
 
         factory.word = function(word) {
             return $http.jsonp('http://www.google.com/dictionary/json?callback=JSON_CALLBACK&sl=en&tl=en&q=' + word).then(function(results) {
+                console.log(results);
                 if (results.data && results.data.primaries) {
                     var definition = results.data;
                     // If there is more than one result, use the second definition.
@@ -18,6 +19,8 @@ angular.module('defineThisModule', ['ui.bootstrap'])
                 } else {
                     return 'Could not find definition';
                 }
+            }, function() {
+                return 'Could not connection to dictionary, please try again later.';
             });
         };
 
