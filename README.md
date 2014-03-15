@@ -1,7 +1,7 @@
 angular-defineThis
 =========
 
-A very minimal Angular module that allows you wrap a word in a simple directive to get a definition of the word via tooltip.
+A very minimal Angular module that allows you wrap a word in a simple directive and retrieve a definition of it via tooltip. This module uses Google's Define API for definition references.
 
 Created By
 ----
