@@ -18,6 +18,8 @@ angular.module('defineThisModule', ['ui.bootstrap'])
                 } else {
                     return 'Could not find definition';
                 }
+            }, function() {
+                return 'Unable to connect to dictionary, please try again later.';
             });
         };
 
