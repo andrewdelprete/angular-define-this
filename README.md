@@ -41,5 +41,5 @@ License
 MIT
 [AngularJS]:http://angularjs.org/
 [Twitter Bootstrap UI]:https://github.com/grevory/angular-local-storage
-[@pathsofdesign]:http://www.twitter.com/pathsofdesign
-[Angular Define This Demo]:http://pathsofdesign.github.io/angular-define-this/#/
+[@andrewdelprete]:http://www.twitter.com/andrewdelprete
+[Angular Define This Demo]:http://andrewdelprete.github.io/angular-define-this/#/
